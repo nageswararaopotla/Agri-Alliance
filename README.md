@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/IoT-Enabled-brightgreen?style=for-the-badge&logo=arduino&logoColor=white" />
   <img src="https://img.shields.io/badge/Azure-Cloud-blue?style=for-the-badge&logo=microsoftazure&logoColor=white" />
   <img src="https://img.shields.io/badge/Machine%20Learning-XGBoost%20|%20CNN%20|%20YOLOv5-orange?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Made%20With-Python-yellow?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Platform-Android%20App%20|%20Azure%20Cloud-blueviolet?style=for-the-badge&logo=android&logoColor=white" />
   <img src="https://img.shields.io/badge/Status-Research%20Prototype-success?style=for-the-badge" />
 </p>
@@ -198,7 +198,7 @@ Backup **rechargeable batteries** ensure uninterrupted operation during cloudy c
 **👤 Nageswararao Potla**  
 💡 *IoT, Cloud, and AI Enthusiast | Smart Agriculture Innovator*  
 
-📫 Contact: *(Add your LinkedIn or email here)*  
+📫 Contact: *(nageswararaopotla2003@gmail.com)*  
 
 ---
 
