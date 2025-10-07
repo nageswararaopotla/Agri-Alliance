@@ -1,187 +1,223 @@
-# 🌾 Agri-Wheel: Smart & Sustainable Agriculture System
+<h1 align="center">🌾 AGRI-WHEEL: Smart & Sustainable Agriculture System</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/IoT-Enabled-brightgreen?style=for-the-badge&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure-Cloud-blue?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-XGBoost%20|%20CNN%20|%20YOLOv5-orange?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Made%20With-Python-yellow?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Platform-Android%20App%20|%20Azure%20Cloud-blueviolet?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Research%20Prototype-success?style=for-the-badge" />
+</p>
+
+---
 
 ## 📘 Abstract
-**Agri-Wheel** is an **IoT + Machine Learning-based Smart Agriculture System** that aims to help farmers achieve **better yield in less area** with **data-driven precision farming**.  
-The project integrates **sensors, Azure Cloud, ML algorithms, and an Android App** to monitor soil, predict suitable crops, control irrigation, and detect plant diseases and weeds — all in one system.
+
+Agriculture is the backbone of India’s economy, contributing significantly to the **GDP** and livelihood of millions. With rising population and limited farmland, achieving **higher yield in less area** has become a challenge.
+
+**AGRI-WHEEL** is an innovative **IoT + Machine Learning-based Smart Agriculture System** that addresses these challenges. It leverages **Azure Cloud**, **WSNs (Wireless Sensor Networks)**, and **ML algorithms** to create a **real-time precision farming ecosystem**.
+
+This system performs **soil testing**, **crop recommendation**, **disease prediction**, **weed detection**, and **smart irrigation control**, ensuring efficient resource usage and improved yield.
 
 ---
 
-## 🧠 Motivation
-Agriculture forms the backbone of India’s economy, yet challenges like **soil degradation, overuse of fertilizers**, and **climate change** reduce productivity.  
-Agri-Wheel addresses these by using **real-time data**, **AI**, and **IoT automation** to assist farmers with smart decision-making.
+## 🌾 Objectives
+
+- 📊 **Crop Recommendation** using XGBoost  
+- 🌿 **Disease Prediction** using CNN  
+- 🌱 **Weed Detection** using YOLOv5  
+- 💧 **Smart Irrigation** with automatic inlet/outlet control  
+- 🧪 **Fertilizer Recommendation** with brand details  
+- ☀️ **Solar-powered operation** for sustainability  
 
 ---
 
-## ⚙️ System Overview
-Our model operates through **three layers**: **Hardware**, **Cloud**, and **Application**.
+## 🧠 Index Terms
 
-### 🧩 System Architecture
-Below is the overall architecture of Agri-Wheel showing how sensors, the cloud, and the Android app interact.
-
-![Block Diagram](Images_Agri/Block_Diagram.png)
+`Azure Cloud`, `IoT`, `Sensors`, `Smart Agriculture`,  
+`Sustainable Farming`, `Smart Irrigation`, `YOLOv5`,  
+`Android App`, `CNN`, `XGBoost`, `Fertilizer Suggestion`
 
 ---
 
-## 🌿 Hardware Components
+## 🚀 Overall Innovation
 
-The hardware part consists of a **microcontroller**, multiple **sensors**, and a **solar-powered battery system** for off-grid operation.
+AGRI-WHEEL combines **hardware, cloud, and mobile application** layers into one cohesive system.
 
-### 🔧 Components Used:
-- **Microcontroller:** ESP32 / NodeMCU / Arduino  
-- **Sensors:**  
-  - NPK Sensor  
-  - pH Sensor  
-  - EC Sensor  
-  - Soil Moisture Sensor  
-  - Temperature & Humidity Sensor  
-  - Water Level Sensor  
-- **Camera Module:** For crop image capturing every 3 hours  
-- **Power:** Solar panels charging battery supply  
+- **Hardware:** Collects real-time soil and environmental data using sensors (NPK, pH, EC, temperature, humidity, water level).  
+- **Cloud (Azure):** Stores and processes data, running ML models for predictions.  
+- **Mobile App:** Displays data, predictions, and irrigation control options to farmers.
 
-![Sensors](Images_Agri/Sensors.png)
+🔋 Powered by **solar energy**, the model ensures sustainability even in remote locations.
 
 ---
 
-## ☁️ Cloud Integration (Azure)
-The data collected from sensors is uploaded to **Microsoft Azure Cloud**, which performs:
-- Data storage and management  
-- ML-based processing and prediction  
-- Communication between devices and Android App  
+## 🌟 Key Features
 
-This architecture ensures real-time updates and smart decision automation.
-
-![Overall Innovation](Images_Agri/Overall%20Innovation.png)
-
----
-
-## 🤖 Machine Learning & AI Models
-
-### 🌾 Crop Recommendation (XGBoost)
-To suggest the most suitable crop, the **XGBoost** algorithm analyzes:
-- NPK (Nitrogen, Phosphorus, Potassium)
-- pH and EC levels
-- Temperature, Humidity, and Soil Moisture  
-It predicts which crop yields the highest return under those soil conditions.
-
-![Crop Recommendation](Images_Agri/Crop_Recommendation.png)
-![Dataset](Images_Agri/Dataset.png)
-![Features](Images_Agri/Features.png)
+✅ Real-time crop and soil monitoring  
+✅ AI-powered recommendations  
+✅ Cloud-based data storage and analytics  
+✅ Voice commands for local language support  
+✅ Android-based monitoring and control  
+✅ Solar and battery-based self-sustainability  
 
 ---
 
-### 💧 Smart Irrigation System
-The irrigation module uses **sensor thresholds** and **condition-based algorithms**:
-- **INLET motor:** Turns **ON** when soil moisture < threshold  
-- **OUTLET motor:** Removes excess water during overwatering/heavy rain  
-All actions are controlled automatically or via the mobile app.
+## 🧩 Block Diagram
+
+[![Block Diagram](Images_Agri/Block_Diagram.png)](Images_Agri/Block_Diagram.png "Click to enlarge")
 
 ---
 
-### 🌿 Disease Detection (CNN)
-Farmers can capture and upload a photo of a diseased leaf using the **Android App**.  
-The **CNN (Convolutional Neural Network)** model analyzes the image and:
-- Predicts the disease  
-- Recommends fertilizers/pesticides  
-- Displays product information in the app  
+## ⚙️ System Workflow
 
-![Prediction](Images_Agri/Prediction.png)
+### 🔹 Stage 1 – Data Collection
+Sensors gather **NPK**, **pH**, **EC**, **moisture**, **humidity**, and **temperature** values.  
+The system’s camera captures field images periodically and sends them to the cloud.
+
+### 🔹 Stage 2 – Data Processing
+The **Azure Cloud** compares real-time data with predefined thresholds.  
+- XGBoost → Crop Recommendation  
+- CNN → Disease Detection  
+- YOLOv5 → Weed Detection  
+
+### 🔹 Stage 3 – Decision & Control
+- Controls irrigation (INLET/OUTLET motors) automatically.  
+- Displays results and alerts on the mobile app.  
+- Provides voice-based feedback in the farmer’s local language.  
 
 ---
 
-### 🌱 Weed Detection (YOLOv5)
-Weeds are detected using the **YOLOv5 Object Detection Model**.  
-The onboard camera captures real-time field images and identifies weed locations.  
-These detections are sent to the app so farmers can take quick action.
+## 🧰 Hardware Components
+
+| Component | Description |
+|------------|-------------|
+| **NodeMCU / Arduino** | Core microcontroller |
+| **NPK Sensor** | Nutrient level detection |
+| **pH & EC Sensors** | Soil property monitoring |
+| **DHT11/DHT22** | Temperature and humidity |
+| **Moisture Sensor** | Soil moisture detection |
+| **Water Level Sensor** | Irrigation tank level |
+| **Camera Module** | Crop image capture |
+| **Relay & Motors** | Automated water flow control |
+| **Solar Battery** | Renewable power source |
+
+---
+
+## ☁️ Azure Cloud Integration
+
+| Azure Service | Purpose |
+|----------------|----------|
+| **IoT Hub** | Data communication between devices |
+| **Azure ML Studio** | Model training & deployment |
+| **Blob Storage** | Image and data storage |
+| **Stream Analytics** | Real-time analysis |
+| **Power BI** | Data visualization |
+
+---
+
+## 🧮 Machine Learning Models
+
+| Function | Algorithm | Purpose |
+|-----------|------------|----------|
+| 🌾 Crop Recommendation | XGBoost | Suggests optimal crops |
+| 🌿 Disease Detection | CNN | Identifies plant diseases |
+| 🌱 Weed Detection | YOLOv5 | Detects and classifies weeds |
+| 🧪 Fertilizer Suggestion | Rule-Based | Provides brand & usage details |
+
+---
+
+## 📸 Visual Overview
+
+### 🧱 Features Overview
+[![Features](Images_Agri/Features.png)](Images_Agri/Features.png)
+
+### 🌾 Crop Recommendation
+[![Crop Recommendation](Images_Agri/Crop_Recommendation.png)](Images_Agri/Crop_Recommendation.png)
+
+### 📊 Dataset
+[![Dataset](Images_Agri/Dataset.png)](Images_Agri/Dataset.png)
+
+### 🧠 Model Summary
+[![Model](Images_Agri/model.png)](Images_Agri/model.png)
+
+### 🌿 Prediction Result
+[![Prediction](Images_Agri/Prediction.png)](Images_Agri/Prediction.png)
+
+### 🧩 Sensors Setup
+[![Sensors](Images_Agri/Sensors.png)](Images_Agri/Sensors.png)
+
+### 💡 Overall Innovation
+[![Overall Innovation](Images_Agri/Overall%20Innovation.png)](Images_Agri/Overall%20Innovation.png)
 
 ---
 
 ## 📱 Android Application
-The **Android App** provides farmers with:
-- Live soil & weather data  
-- Crop and fertilizer recommendations  
-- Disease detection results  
-- Voice guidance in local language  
-- Motor control for irrigation  
 
-![model](Images_Agri/model.png)
-
----
-
-## 🧭 Workflow Summary
-
-| Stage | Description |
-|:--|:--|
-| **1. Data Collection** | Sensors collect soil and environmental readings, while the camera captures images. |
-| **2. Cloud Processing** | Azure ML models process the data to provide crop and irrigation recommendations. |
-| **3. Decision Making** | System triggers irrigation motors and sends updates to the Android App. |
-| **4. Farmer Interaction** | Farmer receives recommendations and can control system through app or voice commands. |
+**App Functions:**
+- Monitor live sensor data 🌡️  
+- Receive crop & fertilizer suggestions 🌾  
+- Control irrigation remotely 💧  
+- Upload plant images for disease analysis 🌿  
+- Receive voice alerts in regional language 🗣️  
 
 ---
 
-## 🔋 Power System
-The device runs on **battery power**, recharged via **solar panels**.  
-This makes the system **eco-friendly** and usable even in remote rural areas.
+## 📊 Advantages
+
+| Feature | Benefit |
+|----------|----------|
+| 💧 Smart Irrigation | Saves water efficiently |
+| 🌾 Crop Recommendation | Increases yield |
+| 🧪 Fertilizer Control | Reduces chemical overuse |
+| ☀️ Solar-Powered | Sustainable energy use |
+| 🧠 ML Integration | Data-driven decision-making |
+| 🗣️ Voice Interface | Ease of use for farmers |
 
 ---
 
-## 💡 Key Benefits
-✅ Real-time soil monitoring  
-✅ Automatic irrigation control  
-✅ Crop and fertilizer suggestions  
-✅ Disease & weed detection  
-✅ Voice-assisted app for farmers  
-✅ Renewable energy-powered system  
+## 🔋 Power Management
+
+Powered by **solar renewable energy**, the system operates continuously even in low-resource environments.  
+Backup **rechargeable batteries** ensure uninterrupted operation during cloudy conditions.
 
 ---
 
-## 🧠 Algorithms Used
+## 🚧 Future Enhancements
 
-| Module | Algorithm | Function |
-|:--|:--|:--|
-| Crop Recommendation | XGBoost | Suggests best crops based on soil & environment |
-| Disease Prediction | CNN | Classifies crop disease from image |
-| Weed Detection | YOLOv5 | Detects unwanted weeds |
-| Irrigation Control | Condition-Based Logic | Automates water supply |
-
----
-
-## 🌎 Technologies Used
-
-| Category | Tools / Technologies |
-|:--|:--|
-| **Hardware** | Arduino / ESP32, Sensors, Camera |
-| **Machine Learning** | XGBoost, CNN, YOLOv5 |
-| **Cloud** | Microsoft Azure IoT Hub, Azure ML |
-| **App** | Android Studio (Java/Kotlin) |
-| **Communication** | MQTT / HTTP |
-| **Power** | Solar + Battery Backup |
+- Drone-based field image collection  
+- Blockchain for supply-chain transparency  
+- Multi-crop prediction system  
+- Advanced weather forecasting integration  
+- AI chatbot for farmer interaction  
 
 ---
 
-## 🔮 Future Enhancements
-- Integration with **Weather APIs** for predictive irrigation  
-- **AI Voice Assistant** in multiple languages  
-- **Drone-based weed spraying** system  
-- Larger **crop dataset** for better accuracy  
+## 👨‍💻 Author
+
+**👤 Nageswararao Potla**  
+💡 *IoT, Cloud, and AI Enthusiast | Smart Agriculture Innovator*  
+
+📫 Contact: *(Add your LinkedIn or email here)*  
 
 ---
 
-## 👨‍💻 Contributors
-- **Nageswara Rao Potla**  
-- Team Agri-Alliance  
+## 🪴 Conclusion
+
+**AGRI-WHEEL** represents a step toward **data-driven, sustainable, and automated agriculture**.  
+By merging **IoT, Cloud, and ML technologies**, it empowers farmers to **increase productivity**, **reduce waste**, and **achieve sustainable growth**.
+
+> 🌍 “Empowering Farmers through Technology for a Smarter, Greener Tomorrow.”
 
 ---
 
-## ⚖️ License
-Released under the **MIT License** — free for academic and research use with attribution.
+## 📜 License
+
+Licensed under the **MIT License** — free to use for research and education.
 
 ---
 
-## 🧰 Clone & Run
-
-```bash
-# Clone repository
-git clone https://github.com/nageswararaopotla/Agri-Alliance.git
-
-# Navigate
-cd Agri-Alliance
+<p align="center">
+  <img src="https://img.shields.io/badge/Innovation-Smart%20Agriculture-success?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Powered%20By-Azure%20%7C%20IoT%20%7C%20AI-blue?style=for-the-badge" />
+</p>
