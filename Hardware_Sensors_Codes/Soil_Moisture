@@ -1,1 +1,15 @@
+#define soilMoisture A0
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int moistureValue = analogRead(soilMoisture);
+  float moisturePercent = map(moistureValue, 1023, 0, 0, 100);
+  Serial.print("Soil Moisture: ");
+  Serial.print(moisturePercent);
+  Serial.println("%");
+  delay(2000);
+}
 
